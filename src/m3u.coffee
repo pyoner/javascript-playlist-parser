@@ -2,6 +2,7 @@
 
 EXTENDED = '#EXTM3U'
 COMMENT_RE = /:(-?\d+),(.+)\s*-\s*(.+)\n(.+)/
+COMMENT_RE2 = /:(-?\d+),(.+)\n(.+)/
 
 # #EXTINF:822,Iron Maiden - Rime of the Ancient Mariner
 extended = (line) ->
@@ -11,6 +12,13 @@ extended = (line) ->
     artist: match[2]
     title: match[3]
     file: match[4].trim()
+  else
+    match = line.match COMMENT_RE2
+    if match
+      length: match[1]
+      artist: match[2]
+      title: match[2]
+      file: match[3].trim()
 
 simple = (string) ->
   file: string.trim()

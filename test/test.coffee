@@ -58,6 +58,14 @@ describe 'm3u parsing', ->
         parsed[0].should.have.ownProperty 'length'
         parsed[0].length.should.equal '-1'
 
+    describe 'ru.m3u', ->
+      it 'should artist equal title', ->
+        playlist = fs.readFileSync './test/ru.m3u', encoding: 'utf8'
+        parsed = M3U.parse playlist
+        parsed.length.should.equal 1
+        parsed[0].artist.should.equal parsed[0].title
+
+
 describe 'pls parsing', ->
   it 'should have a name of pls', ->
     PLS.name.should.equal 'pls'
@@ -108,5 +116,5 @@ describe 'asx parsing', ->
       parsed = ASX.parse fs.readFileSync './test/malformed_no_attributes.asx', encoding: 'utf8'
       parsed.should.be.an 'array'
       parsed.length.should.be.empty
-    
+
 
