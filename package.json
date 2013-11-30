@@ -2,7 +2,7 @@
   "name": "playlist-parser",
   "version": "0.0.8",
   "description": "Parse m3u, m3u extended, and pls",
-  "main": "lib/parser.min.js",
+  "main": "lib/parser.js",
   "directories": {
     "test": "test"
   },
