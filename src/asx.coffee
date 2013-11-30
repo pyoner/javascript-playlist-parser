@@ -25,7 +25,7 @@ parse = (playlist) ->
   find doc, ret
   ret
 
-(if module? then module.exports else window).ASX =
+exports.ASX =
   name: 'asx'
   parse: parse
 

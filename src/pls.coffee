@@ -10,7 +10,7 @@ parse = (playlist) ->
       tracks[index][key.toLowerCase()] = value
   tracks.filter (track) -> track?
 
-(if module? then module.exports else window).PLS =
+exports.PLS =
   name: 'pls'
   parse: parse
 

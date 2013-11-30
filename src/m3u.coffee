@@ -36,7 +36,7 @@ parse = (playlist) ->
   else
     playlist.split('\n').filter(empty).filter(comments).map simple
 
-(if module? then module.exports else window).M3U =
+exports.M3U =
   name: 'm3u'
   parse: parse
 
