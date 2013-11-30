@@ -1,4 +1,4 @@
-DOMParser = require('xmldom').DOMParser
+DOMParser = require('xmldom-browserify').DOMParser
 
 # pre order, depth first
 find = (node, list) ->

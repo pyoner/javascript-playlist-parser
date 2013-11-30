@@ -27,13 +27,13 @@
     "url": "https://github.com/nickdesaulniers/javascript-playlist-parser/issues"
   },
   "dependencies": {
-    "xmldom": "git+https://github.com/pyoner/xmldom-browserify.git"
+    "xmldom-browserify": "git+https://github.com/pyoner/xmldom-browserify.git"
   },
   "devDependencies": {
     "chai": "1.7.2",
     "grunt-contrib-coffee": "0.7.0",
     "grunt-mocha-test": "0.6.3",
     "grunt-contrib-uglify": "~0.2.4",
-    "xmldom": "git+https://github.com/pyoner/xmldom-browserify.git"
+    "xmldom-browserify": "git+https://github.com/pyoner/xmldom-browserify.git"
   }
 }
