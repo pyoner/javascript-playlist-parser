@@ -1,4 +1,4 @@
-DOMParser = window?.DOMParser or require?('xmldom').DOMParser or ->
+DOMParser = require('xmldom').DOMParser
 
 # pre order, depth first
 find = (node, list) ->

@@ -26,6 +26,9 @@
   "bugs": {
     "url": "https://github.com/nickdesaulniers/javascript-playlist-parser/issues"
   },
+  "dependencies": {
+    "xmldom": "git+https://github.com/pyoner/xmldom-browserify.git"
+  },
   "devDependencies": {
     "chai": "1.7.2",
     "grunt-contrib-coffee": "0.7.0",
